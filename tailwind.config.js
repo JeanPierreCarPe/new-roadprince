@@ -20,7 +20,9 @@ module.exports = {
         "eb-garamond": ["var(--font-ebgaramond)"],
       },
       backgroundImage: {
-        // home: "url('/assets/background-home.jpg')"
+        home1: "url('/assets/background-home-1.jpg')",
+        home2: "url('/assets/background-home-2.jpg')",
+        home3: "url('/assets/background-home-3.jpg')",
       }
     },
   },
