@@ -1,5 +1,4 @@
-import downArrow from "./arrow.svg"
+import downArrow from "./arrow.svg";
+import logo from "./logo.svg";
 
-export {
-    downArrow
-}
+export { downArrow, logo };

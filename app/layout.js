@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dosis.variable} ${eb_garamond.variable}`}>
       <body className="scrollbar-hide">
-        {/* <Navbar /> */}
-        <main className="relative overflow-hidden">
+        <Navbar />
+        <main className="relative overflow-hidden bg-white">
         {children}
         </main>
         {/* <Footer /> */}
