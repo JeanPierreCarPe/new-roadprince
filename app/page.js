@@ -1,12 +1,13 @@
 import About from "./components/About";
 import Hero from "./components/Hero";
+import PlanYourTrip from "./components/PlanYourTrip";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <About />
-      Services Gallery Testimonials Contact
+      <PlanYourTrip /> Gallery Testimonials Contact
     </>
   );
 }
