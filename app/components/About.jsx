@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="max-container h-fit px-4 lg:px-24 relative overflow-hidden">
+    <section id="discover" className="max-container h-fit px-4 lg:px-24 relative overflow-hidden">
       <div className="relative z-20">
         <svg
           width="6"
