@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 
 const PlanYourTrip = () => {
   return (
-    <section className="max-container h-fit px-4 lg:px-24 py-10 lg:py-32 relative">
+    <section id="plan-your-trip" className="max-container h-fit px-4 lg:px-24 py-10 lg:py-20 relative">
       <div className="relative w-full flex flex-col justify-center items-center gap-10 z-10">
         <div className="flex items-center justify-center gap-8">
           <svg
@@ -45,9 +45,17 @@ const PlanYourTrip = () => {
           your journey is as smooth as the asphalt beneath your wheels.
         </p>
         <div className="flex flex-col lg:flex-row justify-between w-full lg:w-4/5 gap-10">
-            <ServiceCard text="Plan Your Journey" image={service1} />
-            <ServiceCard text="Explore Destinations" image={service2} style="lg:mt-20" />
-            <ServiceCard text="Explore Roadwise" image={service3} style="lg:mt-40" />
+          <ServiceCard text="Plan Your Journey" image={service1} />
+          <ServiceCard
+            text="Explore Destinations"
+            image={service2}
+            style="lg:mt-20"
+          />
+          <ServiceCard
+            text="Explore Roadwise"
+            image={service3}
+            style="lg:mt-40"
+          />
         </div>
       </div>
       <svg
