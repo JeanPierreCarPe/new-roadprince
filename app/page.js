@@ -1,7 +1,17 @@
+import About from "./components/About";
+import Gallery from "./components/Gallery";
+import Hero from "./components/Hero";
+import PlanYourTrip from "./components/PlanYourTrip";
+import Testimonials from "./components/Testimonials";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
-    </main>
-  )
+    <>
+      <Hero />
+      <About />
+      <PlanYourTrip />
+      <Gallery />
+      <Testimonials />
+    </>
+  );
 }

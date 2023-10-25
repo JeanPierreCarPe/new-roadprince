@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         white: "#FBFBFB",
         black: "#3B3B3C",
+        "total-black": "#000000",
         "custom-green": "#D2D4C8"
       },
       screens: {
@@ -20,7 +21,9 @@ module.exports = {
         "eb-garamond": ["var(--font-ebgaramond)"],
       },
       backgroundImage: {
-        // home: "url('/assets/background-home.jpg')"
+        home1: "url('/assets/background-home-1.jpg')",
+        home2: "url('/assets/background-home-2.jpg')",
+        home3: "url('/assets/background-home-3.jpg')",
       }
     },
   },
