@@ -1,5 +1,7 @@
 import { Dosis, EB_Garamond } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const dosis = Dosis({
   subsets: ["latin"],
@@ -18,7 +20,13 @@ const eb_garamond = EB_Garamond({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dosis.variable} ${eb_garamond.variable}`}>
-      <body>{children}</body>
+      <body className="scrollbar-hide">
+        {/* <Navbar /> */}
+        <main className="relative overflow-hidden">
+        {children}
+        </main>
+        {/* <Footer /> */}
+        </body>
     </html>
   );
 }
