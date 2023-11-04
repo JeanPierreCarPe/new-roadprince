@@ -13,44 +13,50 @@ import {
   user6,
 } from "@/public/assets";
 import ImageCard from "./ImageCard";
+import { UpRevealBox } from "./UpRevealBox";
 
 const Gallery = () => {
   return (
-    <section id="gallery" className="max-container h-fit px-4 lg:px-24 py-20 lg:py-20 relative">
+    <section
+      id="gallery"
+      className="max-container h-fit px-4 lg:px-24 py-20 lg:py-20 relative"
+    >
       <div className="relative w-full flex flex-col justify-center items-center gap-10 z-10">
-        <div className="flex items-center justify-center gap-8">
-          <svg
-            width="194"
-            height="6"
-            viewBox="0 0 194 6"
-            fill="none"
-            className="max-sm:hidden"
-          >
-            <path
-              d="M3 3L191 3"
-              stroke="#3B3B3C"
-              strokeWidth="5"
-              strokeLinecap="round"
-            />
-          </svg>
-          <h1 className="font-eb-garamond font-semibold text-center text-5xl lg:text-8xl text-black">
-            Scenic Routes Captured
-          </h1>
-          <svg
-            width="194"
-            height="6"
-            viewBox="0 0 194 6"
-            fill="none"
-            className="max-sm:hidden"
-          >
-            <path
-              d="M3 3L191 3"
-              stroke="#3B3B3C"
-              strokeWidth="5"
-              strokeLinecap="round"
-            />
-          </svg>
-        </div>
+        <UpRevealBox>
+          <div className="flex items-center justify-center gap-8">
+            <svg
+              width="194"
+              height="6"
+              viewBox="0 0 194 6"
+              fill="none"
+              className="max-sm:hidden"
+            >
+              <path
+                d="M3 3L191 3"
+                stroke="#3B3B3C"
+                strokeWidth="5"
+                strokeLinecap="round"
+              />
+            </svg>
+            <h1 className="font-eb-garamond font-semibold text-center text-5xl lg:text-8xl text-black">
+              Scenic Routes Captured
+            </h1>
+            <svg
+              width="194"
+              height="6"
+              viewBox="0 0 194 6"
+              fill="none"
+              className="max-sm:hidden"
+            >
+              <path
+                d="M3 3L191 3"
+                stroke="#3B3B3C"
+                strokeWidth="5"
+                strokeLinecap="round"
+              />
+            </svg>
+          </div>
+        </UpRevealBox>
         <div className="flex flex-col lg:flex-row justify-between w-full gap-10">
           <div className="flex flex-col w-full lg:w-[30%] gap-10">
             <ImageCard
