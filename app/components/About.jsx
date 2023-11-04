@@ -1,9 +1,14 @@
 import { about1, about2, about3, about4 } from "@/public/assets";
 import Image from "next/image";
+import { UpRevealBox } from "./UpRevealBox";
+import { ImageRevealBox } from "./ImageRevealBox";
 
 const About = () => {
   return (
-    <section id="discover" className="max-container h-fit px-4 lg:px-24 relative overflow-hidden">
+    <section
+      id="discover"
+      className="max-container h-fit px-4 lg:px-24 relative overflow-hidden"
+    >
       <div className="relative z-20">
         <svg
           width="6"
@@ -20,24 +25,33 @@ const About = () => {
           />
         </svg>
         <div className="flex flex-col my-20 lg:my-40 gap-8">
-          <h1 className="font-eb-garamond font-semibold text-5xl lg:text-8xl text-black ml-5 lg:ml-10 tracking-wide">
-            Discover New Horizons
-          </h1>
+          <UpRevealBox>
+            <h1 className="font-eb-garamond font-semibold text-5xl lg:text-8xl text-black ml-5 lg:ml-10 tracking-wide">
+              Discover New Horizons
+            </h1>
+          </UpRevealBox>
           <div className="flex flex-col lg:flex-row w-full gap-8">
             <div className="flex flex-col justify-between items-end gap-16 lg:gap-32 lg:min-w-[460px]">
-              <p className="font-dosis font-medium text-xl text-black tracking-wide leading-9 ml-5 lg:ml-10">
-                Immerse yourself in the beauty of the open road. Our curated
-                collection of photographs will transport you to scenic routes
-                that unveil the hidden gems of the world. From winding coastal
-                highways to serene mountain passes, each image tells a story of
-                adventure waiting to be embraced.
-              </p>
-              <div className="w-[110%] lg:w-full max-sm:h-[200px] h-[300px] max-sm:mr-5 relative rounded-xl box-shadow overflow-hidden">
-                <Image src={about2} alt="" fill className="object-cover" />
+              <UpRevealBox>
+                <p className="font-dosis font-medium text-xl text-black tracking-wide leading-9 ml-5 lg:ml-10">
+                  Immerse yourself in the beauty of the open road. Our curated
+                  collection of photographs will transport you to scenic routes
+                  that unveil the hidden gems of the world. From winding coastal
+                  highways to serene mountain passes, each image tells a story
+                  of adventure waiting to be embraced.
+                </p>
+              </UpRevealBox>
+
+              <div className="w-[110%] lg:w-full max-sm:h-[200px] h-[300px] max-sm:mr-5 relative">
+                <ImageRevealBox>
+                  <Image src={about2} alt="" fill className="object-cover" />
+                </ImageRevealBox>
               </div>
             </div>
-            <div className="relative max-sm:h-[200px] w-[110%] lg:w-[1000px] lg:min-w-[1000px] max-sm:ml-5 box-shadow rounded-xl overflow-hidden">
-              <Image src={about1} alt="" fill className="object-cover" />
+            <div className="relative max-sm:h-[200px] w-[110%] lg:w-[1000px] lg:min-w-[1000px] max-sm:ml-5">
+              <ImageRevealBox>
+                <Image src={about1} alt="" fill className="object-cover" />
+              </ImageRevealBox>
             </div>
           </div>
         </div>
@@ -58,25 +72,33 @@ const About = () => {
           />
         </svg>
         <div className="flex flex-col my-20 lg:my-40 gap-8">
-          <h1 className="font-eb-garamond font-semibold text-5xl lg:text-8xl text-right text-black mr-5 lg:mr-10 tracking-wide">
-          Fuel Your Wanderlust
-          </h1>
+          <UpRevealBox>
+            <h1 className="font-eb-garamond font-semibold text-5xl lg:text-8xl text-right text-black mr-5 lg:mr-10 tracking-wide">
+              Fuel Your Wanderlust
+            </h1>
+          </UpRevealBox>
           <div className="flex flex-col lg:flex-row-reverse w-full gap-8">
             <div className="flex flex-col justify-between items-end gap-16 lg:gap-32 lg:min-w-[460px]">
-              <p className="font-dosis font-medium text-xl text-right text-black tracking-wide leading-9 mr-5 lg:mr-10">
-                Let your wanderlust thrive as you explore our gallery of road
-                travelers. Witness the joy of individuals and groups, united by
-                a passion for exploration, as they traverse landscapes on
-                motorcycles and in cars. These images capture the essence of the
-                road trip experience - the camaraderie, the freedom, and the
-                thrill of the unknown.
-              </p>
-              <div className="w-[110%] lg:w-full max-sm:h-[200px] h-[300px] max-sm:mr-5 relative rounded-xl box-shadow overflow-hidden">
-                <Image src={about4} alt="" fill className="object-cover" />
+              <UpRevealBox>
+                <p className="font-dosis font-medium text-xl text-right text-black tracking-wide leading-9 mr-5 lg:mr-10">
+                  Let your wanderlust thrive as you explore our gallery of road
+                  travelers. Witness the joy of individuals and groups, united
+                  by a passion for exploration, as they traverse landscapes on
+                  motorcycles and in cars. These images capture the essence of
+                  the road trip experience - the camaraderie, the freedom, and
+                  the thrill of the unknown.
+                </p>
+              </UpRevealBox>
+              <div className="w-[110%] lg:w-full max-sm:h-[200px] h-[300px] max-sm:mr-5 relative">
+                <ImageRevealBox>
+                  <Image src={about4} alt="" fill className="object-cover" />
+                </ImageRevealBox>
               </div>
             </div>
-            <div className="relative max-sm:h-[200px] w-[110%] lg:w-[1000px] lg:min-w-[1000px] max-sm:ml-5 box-shadow rounded-xl overflow-hidden">
-              <Image src={about3} alt="" fill className="object-cover" />
+            <div className="relative max-sm:h-[200px] w-[110%] lg:w-[1000px] lg:min-w-[1000px] max-sm:ml-5">
+              <ImageRevealBox>
+                <Image src={about3} alt="" fill className="object-cover" />
+              </ImageRevealBox>
             </div>
           </div>
         </div>

@@ -1,8 +1,10 @@
 import Image from "next/image";
+import { UpRevealBox } from "./UpRevealBox";
 
 const TestimonialCard = (props) => {
   const { image, name, text } = props;
   return (
+    <UpRevealBox>
     <div className="flex flex-col w-full lg:w-[368px] h-full p-2 md:p-8 gap-3 xl:gap-5">
       <div className="flex flex-col lg:flex-row justify-start items-center gap-3 lg:gap-5">
         <div className="w-20 h-20 rounded-full relative overflow-hidden">
@@ -16,6 +18,7 @@ const TestimonialCard = (props) => {
         {text}
       </p>
     </div>
+    </UpRevealBox>
   );
 };
 

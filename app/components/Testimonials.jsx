@@ -1,10 +1,12 @@
 import { user2, user3, user4, user5, user6 } from "@/public/assets"
 import TestimonialCard from "./TestimonialCard"
+import { UpRevealBox } from "./UpRevealBox"
 
 const Testimonials = () => {
   return (
     <section id="share-your-story" className="max-container h-fit px-4 lg:px-24 py-10 lg:py-20 relative">
       <div className="relative w-full flex flex-col justify-center items-center gap-10 z-10">
+      <UpRevealBox>
         <div className="flex items-center justify-center gap-8">
           <svg
             width="194"
@@ -38,6 +40,7 @@ const Testimonials = () => {
             />
           </svg>
         </div>
+        </UpRevealBox>
         <div className="w-full flex flex-wrap justify-between gap-8 md:justify-center">
           <TestimonialCard
             image={user6}
