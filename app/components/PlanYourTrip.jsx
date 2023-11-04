@@ -1,61 +1,69 @@
 import { service1, service2, service3 } from "@/public/assets";
 import ServiceCard from "./ServiceCard";
+import { UpRevealBox } from "./UpRevealBox";
 
 const PlanYourTrip = () => {
   return (
-    <section id="plan-your-trip" className="max-container h-fit px-4 lg:px-24 py-10 lg:py-20 relative">
+    <section
+      id="plan-your-trip"
+      className="max-container h-fit px-4 lg:px-24 py-10 lg:py-20 relative"
+    >
       <div className="relative w-full flex flex-col justify-center items-center gap-10 z-10">
-        <div className="flex items-center justify-center gap-8">
-          <svg
-            width="194"
-            height="6"
-            viewBox="0 0 194 6"
-            fill="none"
-            className="max-sm:hidden"
-          >
-            <path
-              d="M3 3L191 3"
-              stroke="#3B3B3C"
-              strokeWidth="5"
-              strokeLinecap="round"
-            />
-          </svg>
-          <h1 className="font-eb-garamond font-semibold text-center text-5xl lg:text-8xl text-black">
-            Plan Your Own Road Adventure
-          </h1>
-          <svg
-            width="194"
-            height="6"
-            viewBox="0 0 194 6"
-            fill="none"
-            className="max-sm:hidden"
-          >
-            <path
-              d="M3 3L191 3"
-              stroke="#3B3B3C"
-              strokeWidth="5"
-              strokeLinecap="round"
-            />
-          </svg>
-        </div>
-        <p className="font-dosis font-medium text-center text-xl text-black tracking-wide leading-9 lg:w-4/5">
-          Ready to create your own story on the road? We provide you with
-          resources to plan your road trip effectively. From travel tips and
-          destination guides to road safety essentials, we are here to ensure
-          your journey is as smooth as the asphalt beneath your wheels.
-        </p>
+        <UpRevealBox>
+          <div className="flex items-center justify-center gap-8">
+            <svg
+              width="194"
+              height="6"
+              viewBox="0 0 194 6"
+              fill="none"
+              className="max-sm:hidden"
+            >
+              <path
+                d="M3 3L191 3"
+                stroke="#3B3B3C"
+                strokeWidth="5"
+                strokeLinecap="round"
+              />
+            </svg>
+            <h1 className="font-eb-garamond font-semibold text-center text-5xl lg:text-8xl text-black">
+              Plan Your Own Road Adventure
+            </h1>
+            <svg
+              width="194"
+              height="6"
+              viewBox="0 0 194 6"
+              fill="none"
+              className="max-sm:hidden"
+            >
+              <path
+                d="M3 3L191 3"
+                stroke="#3B3B3C"
+                strokeWidth="5"
+                strokeLinecap="round"
+              />
+            </svg>
+          </div>
+        </UpRevealBox>
+        <UpRevealBox>
+          <p className="font-dosis font-medium text-center text-xl text-black tracking-wide leading-9 lg:w-4/5 m-auto">
+            Ready to create your own story on the road? We provide you with
+            resources to plan your road trip effectively. From travel tips and
+            destination guides to road safety essentials, we are here to ensure
+            your journey is as smooth as the asphalt beneath your wheels.
+          </p>
+        </UpRevealBox>
         <div className="flex flex-col lg:flex-row justify-between w-full lg:w-4/5 gap-10">
-          <ServiceCard text="Plan Your Journey" image={service1} />
-          <ServiceCard
-            text="Explore Destinations"
-            image={service2}
-            style="lg:mt-20"
-          />
-          <ServiceCard
-            text="Explore Roadwise"
-            image={service3}
-            style="lg:mt-40"
-          />
+            <ServiceCard text="Plan Your Journey" image={service1} />
+            <ServiceCard
+              text="Explore Destinations"
+              image={service2}
+              style="lg:mt-20"
+            />
+            <ServiceCard
+              text="Explore Roadwise"
+              image={service3}
+              style="lg:mt-40"
+            />
         </div>
       </div>
       <svg
